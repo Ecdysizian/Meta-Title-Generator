@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Ecdysiz - Meta Title Generator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Meta Title Generator by <span class="highlight">Ecdysiz</span></h1>
+            <p>Generate optimized meta titles for superior SEO performance</p>
+        </div>
+      
+        <div class="tool-container">
+            <form id="metaTitleForm">
+                <div class="form-group">
+                    <label for="primaryKeyword">Primary Keyword</label>
+                    <input type="text" id="primaryKeyword" placeholder="Enter your primary keyword" required>
+                </div>
+      
+                <div class="form-group">
+                    <label for="secondaryKeywords">Secondary Keywords (comma separated)</label>
+                    <input type="text" id="secondaryKeywords" placeholder="e.g. SEO, digital marketing, web development">
+                </div>
+      
+                <div class="form-group">
+                    <label for="brandName">Brand Name (optional)</label>
+                    <input type="text" id="brandName" placeholder="e.g. Ecdysiz">
+                </div>
+      
+                <div class="form-group">
+                    <label for="pageDescription">Page Description</label>
+                    <textarea id="pageDescription" placeholder="Describe your page content briefly" required></textarea>
+                </div>
+      
+                <div class="btn-container">
+                    <button type="button" class="btn" id="generateBtn">GENERATE TITLES</button>
+                </div>
+            </form>
+      
+            <div class="loading" id="loading" style="display: none;"></div>
+      
+            <div class="result-container" id="resultContainer" style="display: none;">
+                <h3>Generated Meta Titles</h3>
+                <p>Select and copy these optimized titles for your page:</p>
+                <div id="titlesList"></div>
+                
+                <div class="csv-actions" id="csvActions">
+                    <button class="csv-btn" id="csvBtn">Convert to CSV File</button>
+                    <a href="#" class="download-btn" id="downloadBtn" style="display: none;">Download CSV</a>
+                </div>
+            </div>
+        </div>
+      </div>
+      <script src="index.js"></script>
+</body>
+</html>
